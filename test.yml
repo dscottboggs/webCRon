@@ -1,0 +1,4 @@
+jobs:
+  - link: localhost:2345
+    every:
+      seconds: 5

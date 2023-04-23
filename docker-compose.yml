@@ -1,0 +1,14 @@
+version: "3.5"
+
+services:
+  webcron:
+    build: .
+    networks: [webcron]
+    labels:
+      traefik.enable: false
+    volumes:
+      - ./test.yml:/etc/webcron/config.yml
+    
+networks:
+  webcron:
+    internal: true
